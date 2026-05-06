@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Malpighi 3: Gestione visite</title>
-  <meta name="description" content="Malpighi 3: Pagina per consultare disponibilità, prenotare visite e visualizzare le visite prenotate." />
+  <meta name="description" content="Malpighi 3: Pagina per consultare disponibilità, programmare visite e visualizzare le visite programmate." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -414,12 +414,12 @@
     <div class="topbar">
       <div class="brand" aria-label="Gestione visite">
         <div class="brand-title">Gestione visite</div>
-        <div class="brand-subtitle">Disponibilità, prenotazioni e visite programmate</div>
+        <div class="brand-subtitle">Disponibilità e gestione visite programmate</div>
       </div>
 
       <nav class="nav-tabs" aria-label="Navigazione principale">
         <a href="#calendario" id="nav-calendario">Disponibilità</a>
-        <a href="#prenota" id="nav-prenota">Programma visita</a>
+        <a href="#programma" id="nav-programma">Programma visita</a>
         <a href="#visite" id="nav-visite">Visite pogrammate</a>
       </nav>
     </div>
@@ -452,10 +452,10 @@
       </div>
     </section>
 
-    <section id="prenota" class="page" data-page-title="Prenota una nuova visita">
+    <section id="programma" class="page" data-page-title="Programma una nuova visita">
       <div class="section-header">
         <div class="section-copy">
-          <h2>Prenota una nuova visita</h2>
+          <h2>Programma una nuova visita</h2>
         </div>
       </div>
 
@@ -465,7 +465,7 @@
 
         <div class="iframe-wrap">
           <iframe
-            title="Form prenotazione visita"
+            title="Form programmazione visita"
             data-src="https://airtable.com/embed/appZmp1cXRoXAPev3/pagsn5Gxc61rDgzXS/form"
             loading="lazy">
           </iframe>
@@ -478,10 +478,10 @@
       </div>
     </section>
 
-    <section id="visite" class="page" data-page-title="Lista visite prenotate">
+    <section id="visite" class="page" data-page-title="Lista visite programmate">
       <div class="section-header">
         <div class="section-copy">
-          <h2>Lista visite prenotate</h2>
+          <h2>Lista visite programmate</h2>
         </div>
       </div>
 
@@ -491,7 +491,7 @@
 
         <div class="iframe-wrap">
           <iframe
-            title="Lista visite prenotate"
+            title="Lista visite programmate"
             data-src="https://airtable.com/embed/appZmp1cXRoXAPev3/shrucjzlYLHDyFgTZ"
             loading="lazy">
           </iframe>
@@ -508,7 +508,7 @@
   </main>
 
   <script>
-    const pages = ["calendario", "prenota", "visite"];
+    const pages = ["calendario", "programma", "visite"];
 
     function loadIframeForPage(pageId) {
       const page = document.getElementById(pageId);
